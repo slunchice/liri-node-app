@@ -19,8 +19,8 @@ var myTweets = function(){
     if (!error){
       for(var i = 0; i < tweets.length; i++){
         console.log(tweets[i].created_at);
-        console.log("");
         console.log(tweets[i].text);
+        console.log("");
       }
     }
   })
@@ -32,16 +32,16 @@ var runThis = function(argOne, argTwo){
 
 var pick = function(caseData, functionData){
   switch(caseData){
-    case "myTweets":
+    case "my-tweets":
     myTweets();
     break;
     case "spotify-this-song":
     spotifySong(functionData);
     break;
-    case "getMeMovie":
+    case "movie-this":
     getMeMovie(functionData);
     break;
-    case "doWhatItSays":
+    case "do-what-it-says":
     doWhatItSays();
     break;
   }
